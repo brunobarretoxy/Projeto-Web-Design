@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{text-align: center;}
+
+
+li.atual a {
+    color: cadetblue;
+}
+.atual{
+    background-color: purple;
+}
+/* odd: ímpar, even: par ou números inteiros */
+tr:nth-child(odd){ 
+    background-color: beige;
+
+}
+
+table{
+    max-width: 70em;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 1em;
+    border: 1px solid blue;
+}
+
