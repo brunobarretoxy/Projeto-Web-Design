@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Experience - Portfólio Bruno</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at bottom right, #5a1e00, #000000);
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 30px 60px;
+    }
+
+    nav {
+      border: 1px solid white;
+      border-radius: 30px;
+      padding: 8px 25px;
+      display: flex;
+      gap: 30px;
+      background: transparent;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      padding: 5px 10px;
+      transition: 0.3s;
+    }
+
+    nav a.active {
+      color: #ff4500;
+    }
+
+    main {
+      padding: 60px;
+    }
+
+    main h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    section h2 {
+      font-size: 1.5em;
+      color: #ff5722;
+      margin-bottom: 5px;
+    }
+
+    section p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      padding: 40px;
+    }
+
+    footer a img {
+      width: 35px;
+      height: 35px;
+      transition: transform 0.3s;
+    }
+
+    footer a img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="experience.html" class="active">Experience</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Experiências</h1>
+
+    <section>
+      <h2>Projeto Pessoal: Portfólio</h2>
+      <p>Desenvolvimento de site pessoal para apresentar minhas habilidades, experiências e projetos, utilizando HTML, CSS e Figma para o design da interface.</p>
+    </section>
+
+    <section>
+      <h2>Estudos em Programação</h2>
+      <p>Atualmente cursando programação com foco em desenvolvimento web, aprendendo tecnologias como Python, JavaScript e versionamento com GitHub.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"></a>
+    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X/Twitter"></a>
+  </footer>
+
+</body>
+</html>
