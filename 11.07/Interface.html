@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <title>Interface 3</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #72CFED, #186C86);
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.icone-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 180px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 1em 1em 1em 1em rgba(0, 0, 0, 0.05);
+  position: relative;
+  text-align: center;
+}
+
+.card .date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.75em;
+  color: #888;
+}
+
+.card h2 {
+  font-size: 1em;
+  margin: 15px 0 5px;
+  color: #0080b3;
+}
+
+.card p {
+  font-size: 0.85em;
+  color: #555;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Imagens/tabler_3d-cube-sphere.png" alt="Cube Sphere">
+  </header>
+
+  <main class="icone-container">
+    <div class="card">
+      <span class="date">20/06</span>
+      <img src="Imagens/certificado-online.png" alt="Ícone 1" />
+      <h2>LOREM IPSUM</h2>
+      <p>Morem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="card">
+      <span class="date">20/06</span>
+      <img src="Imagens/leitura.png" alt="Ícone 2" />
+      <h2>LOREM IPSUM</h2>
+      <p>Morem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="card">
+      <span class="date">20/06</span>
+      <img src="Imagens/biblioteca-online.png" alt="Ícone 3" />
+      <h2>LOREM IPSUM</h2>
+      <p>Morem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="card">
+      <span class="date">20/06</span>
+      <img src="Imagens/aprendendo.png" alt="Ícone 4" />
+      <h2>LOREM IPSUM</h2>
+      <p>Morem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </main>
+</body>
+</html>
