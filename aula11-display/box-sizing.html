@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing </title>
+    <style>
+        main{
+            max-width: 70rem;
+            margin: 0 auto;
+            background-color: rgba(218, 218, 218);
+            padding: 3em;
+            box-sizing: border-box;
+            /* Ele vai fixar a largura independente do valor do padding, max ou min */
+            display: flex;
+            /* Pega o elemento que está dentro dele e bota um ao lado do outro. */
+            gap: 2em;
+            /* Espaçamento entre eles, porém ele pega somente o espaçamento interno. */
+        }
+        section{
+            border: 1px solid black;
+            padding: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>título</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia neque ipsum magni eligendi esse aliquam asperiores quasi, vel veritatis aut ratione sint unde. Iste consequatur alias expedita cumque ad beatae?</p>
+        </section>
+        <section>
+            <h2>título</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia neque ipsum magni eligendi esse aliquam asperiores quasi, vel veritatis aut ratione sint unde. Iste consequatur alias expedita cumque ad beatae?</p>
+        </section>
+        <section>
+            <h2>título</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia neque ipsum magni eligendi esse aliquam asperiores quasi, vel veritatis aut ratione sint unde. Iste consequatur alias expedita cumque ad beatae?</p>
+        </section>
+    </main>
+</body>
+</html>
