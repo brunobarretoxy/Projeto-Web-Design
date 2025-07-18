@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+aside {
+  width: 200px;
+  background-color: #3f6663;
+  color: black;
+  padding: 20px;
+  height: 100vh;
+}
+
+aside h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin: 15px 0;
+}
+
+aside ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 20px 40px;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.card a {
+  text-align: center;
+  padding: 10px;
+  text-decoration: underline;
+  color: purple;
+  font-size: 14px;
+}
+
+.card .separator {
+  background-color: white;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: #003300; /* verde escuro */
+  font-size: 18px;
+}
