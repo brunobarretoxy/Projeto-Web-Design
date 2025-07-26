@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHIFT - 1º Encontro de UX no IFRN</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+    }
+
+    header {
+      background: linear-gradient(to right, #3f5c71, #6d8ca5);
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+    }
+
+    nav {
+      background-color: #b9d3dd;
+      padding: 40px 10px;
+    }
+
+    nav a {
+      display: block;
+      color: #2c3e50;
+      font-size: 22px;
+      text-decoration: none;
+      margin-bottom: 30px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+
+    .box {
+      background: rgba(198, 198, 198, 0.289);
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .box h3 {
+      margin-top: 0;
+    }
+
+    .programacao table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      
+    }
+
+    .programacao td {
+      border: 1px solid #ccc;
+      padding: 4px 6px;
+      
+    }
+
+    .inscricao input[type="text"],
+    .inscricao input[type="email"] {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 10px;
+      border: 1px solid #000;
+      background: #f6f6f6;
+    }
+
+    .inscricao input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .inscricao button {
+      width: 100%;
+      padding: 10px;
+      background: #222;
+      color: white;
+      border: none;
+      font-weight: bold;
+    }
+
+    .img-box {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .img-box img {
+      width: 100%;
+      display: block;
+    }
+
+    .img-box span {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      font-size: 14px;
+      
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 60px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    SHIFT<br>1º Encontro de UX no IFRN
+  </header>
+
+  <div class="container">
+    <nav>
+      <a href="#">Inscrições</a>
+      <a href="#">Programação</a>
+      <a href="#">Palestrantes</a>
+      <a href="#">Organização</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <main>
+      <div class="box">
+        <p>O evento será organizado<br> Cillum singulis voluptate<br>e te enim cillum ad<br>aliquip, incididunt.</p>
+        <button>Leer mais</button>
+      </div>
+
+      <div class="box programacao">
+        <h3>Programação</h3>
+        <table>
+          <tr><td>Dia</td><td>08:00</td><td>Abertura</td></tr>
+          <tr><td>03/06</td><td>11:00</td><td>Sorteios</td></tr>
+          <tr><td>Dia</td><td>08:00</td><td>Palestra de<br>Andrei Gurgel</td></tr>
+          <tr><td>04/06</td><td>11:00</td><td>Sorteios</td></tr>
+        </table>
+      </div>
+
+      <div class="img-box">
+        <img src="palestrantes/amanda.jpg" alt="Amanda Freire">
+        <span>Amanda Freire</span>
+      </div>
+
+      <div class="box">
+        <ul>
+          <li>Palestras</li>
+          <li>Workshops</li>
+          <li>Minicursos</li>
+          <li>Estudos de casos</li>
+          <li>Prêmios</li>
+        </ul>
+      </div>
+
+      <div class="box inscricao">
+        <h3>Inscrição</h3>
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="E-mail">
+        <input type="text" placeholder="Celular">
+        <label><input type="checkbox">Aluno do IF</label>
+        <button>Enviar</button>
+      </div>
+
+      <div class="img-box">
+        <img src="palestrantes/georgia.jpg" alt="georgia">
+        <span>Natalia Lima</span>
+      </div>
+
+      <div class="img-box">
+        <img src="palestrantes/henrique.jpg" alt="Henrique Almeida">
+        <span>Henrique Almeida</span>
+      </div>
+
+      <div class="img-box">
+        <img src="palestrantes/ellen.jpg" alt="Larissa Fernandes">
+        <span>Larissa Fernandes</span>
+      </div>
+
+      <div class="box" style="grid-column: span 2;">
+        <h3>Organização</h3>
+        <p>Professores da DIATINF/CNAT/IFRN:</p>
+        <ul>
+          <li><strong>Profa. Alyana Macêdo</strong></li>
+          <li><strong>Profa. Danielle Freitas</strong></li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    Desenvolvido por IFRN.
+  </footer>
+</body>
+</html>
