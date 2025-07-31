@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu DIATINF</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e3a5f;
+    }
+
+    nav {
+      background-color: #0a2239; 
+      padding: 0 180px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo-symbol {
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      margin-right: 10px;
+      border-radius: 4px;
+    }
+
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    .menu > li > a {
+      display: block;
+      padding: 20px 24px;
+      color: white;
+      text-decoration: none;
+      
+      font-weight: 500;
+    }
+
+    .menu > li > a:hover {
+      background-color: #163754;
+    }
+
+    .menu > li.tem-submenu > a::after {
+      content: " ▼";
+      font-size: 10px;
+      color: black;
+      margin-left: 4px;
+    }
+
+    .submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      visibility: hidden;
+      background-color: white;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .submenu li a {
+      display: block;
+      padding: 12px 16px;
+      color: #0a2239;
+      text-decoration: none;
+    }
+
+    .submenu li a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .tem-submenu:hover .submenu {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <div class="logo-symbol"></div>
+      DIATINF
+    </div>
+
+    <ul class="menu">
+      <li class="tem-submenu">
+        <a href="#">A Diretoria</a>
+        <ul class="submenu">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Identidade Visual</a></li>
+          <li><a href="#">Pedagogia</a></li>
+          <li><a href="#">Pesquisa e Extensão</a></li>
+          <li><a href="#">COLABINF</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Horários</a></li>
+      <li><a href="#">Cursos</a></li>
+      <li><a href="#">Docentes</a></li>
+      <li class="tem-submenu">
+        <a href="#">Documentos</a>
+        <ul class="submenu">
+          <li><a href="#">Editais</a></li>
+          <li><a href="#">Manuais e Modelos</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Eventos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
